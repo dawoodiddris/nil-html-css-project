@@ -5,23 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <style>
-             body{
-        margin:30px;
-    }
+
     .flex{
        display: flex;
        justify-content: space-between;
     }
 
-    .flex-in{
-       display: flex;
-       justify-content: space-around;
-    }
      </style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
 
-    
+
+   <nav class="navbar container">
+       <div class="nav-brand">
+           <h3>MSInspir</h3>
+       </div>
+       <!-- add the navbar-nav class to this this -->
+    <div class="">
+        <ul class="nav">
+            <!-- apply the nav-item class to each of the list and the nav-link class to each of the link -->
+            <li class=""><a href="" class="">Home</a></li>
+            <li class=""><a href="" class="">About</a></li>
+            <li class=""><a href="" class="">Contact</a></li>
+        </ul>
+    </div>
+   </nav>
+
+
+
+  <section class="jumbotron container" style="height: 400px;">
+   <div class="row">
+    <div class="col-12">
+        <h1>Welcome to MSInspir </h1>
+    </div>
+ 
+    <div class="col-12">
+     <p>
+          Our goal is to reach out to everyone accross the globe    
+     </p>
+      <!-- add a button and add the btn class with btn-dark to get dark button -->
+     
+
+    </div>
+   </div>
+  </section>
+
+  <!-- take note of the use of mt-5 class here that gives a margin-top: 5px
+  and also see how I increased the height to 250px -->
+   <section class="container mt-5" style="height: 250px;">
+     <div class="row">
+
+        <!-- copy this div and duplicate it 4 times to get the 12 columns -->
+         <div class="col-3">
+             <!-- add the ="./img/RE4pkvE.png to the source to see the image. Aloso add the class rounded to the image -->
+             <img src="" class="rounded" alt="">
+             <p>Surface Go</p>
+         </div>
+
+
+
+     </div>
+   </section>
+
+
+
+   <section>
+       <div class="container">
+           <div class="row">
+
+            <!-- this will help you achieve 12 columns meaning the other columns col-4  will form a new role -->
+            <div class="col-12 mb-5"><h4 class="text-center">Meet with the Team</h4></div>
+
+            <!-- dublicate this col to get the number of cards as seen the whatsapp page and change the contents as you want -->
+            <div class="col-4">
+                <!-- read on the card components here https://getbootstrap.com/docs/4.5/components/card/ -->
+
+                <div class="card" style="width:190px">
+                    <img src="./janedoe.png" alt="" class="card-img-top" width="150px">
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Podcast</div>
+                    <div class="card-text">Listen to your precious devs</div>
+                </div>    
+            </div>
+
+
+           </div>
+       </div>
+
+   </section>
+
+   <!-- spot the container-fluid class here and some quick CSS to help achieve the footer  -->
+   <!-- Add the background and the color of the font in the style -->
+   <footer class="container-fluid" style="height: 300px;">
+       <div class="row">
+
+        <!-- add the flex class to the classes and the mt-5 class to achieve the footer result -->
+           <div class="col-4 flex mt-5">
+               <!-- check on the bootstrap site to find out which form class will give you the nice form-control -->
+            <input type="text" class="">
+            <button class="btn btn-light">Subscribe</button>
+           </div>
+       </div>
+   </footer>
 
 </body>
 </html>
